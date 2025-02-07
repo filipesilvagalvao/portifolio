@@ -1,0 +1,95 @@
+/*CSS PADRÃO*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --color-primary: orange;
+    --color-secundary: black;
+    --color-third: rgb(5, 216, 5);
+    --first-background: #272727;
+    --second-background: #030303;
+    --third-background: rgba(0, 0, 0, 0.644);
+    --text-color: #f0f8ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('/src/images/3px-tile.png');
+    background-color: var(--first-background);
+    color: var(--text-color);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 30px 0;
+}
+
+h3 {
+    color: var(--color-primary);
+    background-color: var(--color-secundary);
+    padding: 1%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+h3::before {
+    content: '</> ';
+}
+
+p {
+    line-height: 1.7;
+}
+
+.sections {
+    padding: 250px 4% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-background);
+    width: 100%;
+    padding: 4% 4%;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
+    font-size: 1rem;
+}
+
+#player1,
+#player2,
+#player3,
+#player4 {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

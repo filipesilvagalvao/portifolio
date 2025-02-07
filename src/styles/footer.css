@@ -1,0 +1,23 @@
+/*CSS FOOTER*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--second-background);
+    padding: 1% min(2%, 165px);
+}
+
+#footer-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#footer-items i{
+    color: var(--text-color);
+    font-size:3rem;
+}

@@ -1,0 +1,79 @@
+/*CSS HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--color-primary);
+    width: 100%;
+    height: 135px;
+    background-color: var(--second-background);
+    padding: 1% min(2%, 165px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#menu li:hover {
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+}
+
+#menu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
+    font-weight: bold;
+    width: 112px;
+    padding: 1%;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    white-space: wrap;
+    transition: .3s;
+}
+
+#menu a:hover {
+    color: var(--color-primary);
+    background-color: var(--color-secundary);
+    border: 1px solid var(--color-primary);
+}
+
+#photo-person>img {
+    width: min(30%, 70px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid var(--color-primary);
+}
+
+#photo-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

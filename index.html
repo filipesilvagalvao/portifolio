@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header>
+        <div id="photo-person">
+            <img src="src/images/foto.jpeg" alt="foto de perfil">
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#experience">Esperiências</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--CONTEÚDO PRINCIPAL-->
+    <main>
+        <div id="firt-title">
+            <h1>Prazer, meu nome é Filipe!</h1>
+        </div>
+        <!--PREMEIRA SEÇÃO-->
+        <section id="about" class="sections">
+            <h2>Um pouco sobre mim</h2>
+            <div class="contents">
+                <p>Meu nome é Filipe Silva Galvão, tenho 28 anos, sou casado e pai de um menino. Gosto de games, tocar
+                    violão e viajar para lugares frescos/frios com paísagens e construções bonitas, nunca tive interesse
+                    em praias.</p>
+                <p>Trabalho com a internet <strong>desde de 2021</strong>, mais especificamente com desenvolvimento de
+                    sites e <strong>aplicação de SEO</strong>. Venho ganhando o pão de cada dia fazendo webs,
+                    <strong>subindo de forma orgânica</strong> com SEO e monetizando com algum ads, tipo o Google
+                    Adsense.
+                </p>
+            </div>
+        </section>
+        <!--SEGUNDA SEÇÃO-->
+        <section id="projects" class="sections">
+            <h2>Meus projetos</h2>
+            <div class="contents">
+                <div id="grid-projects">
+                    <div>
+                        <h3>Futebol hoje</h3>
+
+                        <div class="video">
+                            <!-- Player de Vídeo -->
+                            <div id="player1"></div>
+
+                            <!-- Script do Clappr -->
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+                            <script>
+                                // Link do vídeo MP4
+                                const videoUrl1 = "/src/videos/futebol-hoje.mp4"; // Substitua pelo link do seu vídeo MP4
+
+                                // Configuração do Clappr Player
+                                var player = new Clappr.Player({
+                                    source: videoUrl1, // Link do vídeo
+                                    parentId: "#player1", // Elemento onde o player será renderizado
+                                    width: "100%", // Largura do player
+                                    height: "100%", // Altura do player
+                                    autoPlay: false, // Não iniciar automaticamente
+                                    muted: false, // Não iniciar mudo
+                                    controls: true, // Mostrar controles do player
+                                    loop: false, // Não repetir o vídeo
+                                    playback: {
+                                        playInline: true, // Reproduzir em linha (útil para dispositivos móveis)
+                                    },
+                                });
+                            </script>
+                        </div>
+
+                        <p>Site com jogos de futebol hoje, exibe informações que são puxadas de uma api: campeonato,
+                            horário e canal.</p>
+                        <div class="links-for">
+                            <a href="https://futebol-hoje-indol.vercel.app/" target="_blank">link do projeto<i
+                                    class="fa-solid fa-square-up-right"></i></a>
+                            <a href="https://github.com/filipesilvagalvao/futebol-hoje" target="_blank">github <i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Canais de TV</h3>
+                        <div class="video">
+                            <!-- Player de Vídeo -->
+                            <div id="player2"></div>
+
+                            <!-- Script do Clappr -->
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+                            <script>
+                                // Link do vídeo MP4
+                                const videoUrl2 = "/src/videos/tv-online.mp4"; // Substitua pelo link do seu vídeo MP4
+
+                                // Configuração do Clappr Player
+                                var player = new Clappr.Player({
+                                    source: videoUrl2, // Link do vídeo
+                                    parentId: "#player2", // Elemento onde o player será renderizado
+                                    width: "100%", // Largura do player
+                                    height: "100%", // Altura do player
+                                    autoPlay: false, // Não iniciar automaticamente
+                                    muted: false, // Não iniciar mudo
+                                    controls: true, // Mostrar controles do player
+                                    loop: false, // Não repetir o vídeo
+                                    playback: {
+                                        playInline: true, // Reproduzir em linha (útil para dispositivos móveis)
+                                    },
+                                });
+                            </script>
+                        </div>
+                        <p>Exibe diversos canais de TV com horários e programação atualizada automaticamente. Utilizo
+                            web scraping para coletar dados de outros sites e um cronjob para gerar conteúdo de forma
+                            automatizada com base nessas informações.</p>
+                        <div class="links-for">
+                            <a href="https://futebol-na-tv.vercel.app/" target="_blank">link do projeto<i
+                                    class="fa-solid fa-square-up-right"></i></a>
+                            <a href="https://github.com/filipesilvagalvao/futebol-na-tv" target="_blank">github <i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Landing Page de Rifa</h3>
+                        <div class="video">
+
+                            <!-- Player de Vídeo -->
+                            <div id="player3"></div>
+
+                            <!-- Script do Clappr -->
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+                            <script>
+                                // Link do vídeo MP4
+                                const videoUrl3 = "/src/videos/rifa-online.mp4"; // Substitua pelo link do seu vídeo MP4
+
+                                // Configuração do Clappr Player
+                                var player = new Clappr.Player({
+                                    source: videoUrl3, // Link do vídeo
+                                    parentId: "#player3", // Elemento onde o player será renderizado
+                                    width: "100%", // Largura do player
+                                    height: "100%", // Altura do player
+                                    autoPlay: false, // Não iniciar automaticamente
+                                    muted: false, // Não iniciar mudo
+                                    controls: true, // Mostrar controles do player
+                                    loop: false, // Não repetir o vídeo
+                                    playback: {
+                                        playInline: true, // Reproduzir em linha (útil para dispositivos móveis)
+                                    },
+                                });
+                            </script>
+                        </div>
+
+                        <p>Uma página de captura de vendas de rifas</p>
+                        <div class="links-for">
+                            <a href="https://luckybrasil.net/" target="_blank">link do projeto<i
+                                    class="fa-solid fa-square-up-right"></i></a>
+                            <a href="https://github.com/filipesilvagalvao/landing-page-rifa" target="_blank">github <i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Wallpaper Seach</h3>
+                        <div class="video">
+                            <!-- Player de Vídeo -->
+                            <div id="player4"></div>
+
+                            <!-- Script do Clappr -->
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+                            <script>
+                                // Link do vídeo MP4
+                                const videoUrl4 = "/src/videos/rifa-online.mp4"; // Substitua pelo link do seu vídeo MP4
+
+                                // Configuração do Clappr Player
+                                var player = new Clappr.Player({
+                                    source: videoUrl4, // Link do vídeo
+                                    parentId: "#player4", // Elemento onde o player será renderizado
+                                    width: "100%", // Largura do player
+                                    height: "100%", // Altura do player
+                                    autoPlay: false, // Não iniciar automaticamente
+                                    muted: false, // Não iniciar mudo
+                                    controls: true, // Mostrar controles do player
+                                    loop: false, // Não repetir o vídeo
+                                    playback: {
+                                        playInline: true, // Reproduzir em linha (útil para dispositivos móveis)
+                                    },
+                                });
+                            </script>
+                        </div>
+                        <p>Utilizei a API do Unsplashpara fazer esse projeto. Nele você tem burra de busca que você pode
+                            pesquisar por imagens e baixá-las</p>
+                        <div class="links-for">
+                            <a href="https://wallpaper-search-chi.vercel.app/" target="_blank">link do projeto<i
+                                    class="fa-solid fa-square-up-right"></i></a>
+                            <a href="https://github.com/filipesilvagalvao/wallpaper-search" target="_blank">github <i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--TERCEIRA SEÇÃO-->
+        <section id="experience" class="sections">
+            <h2>Em que projetos já participei?</h2>
+            <div class="contents">
+                <ul>
+                    <li>2021 <i class="fa-solid fa-check"></i> - Criei um site de transmissão ao vivo e monetizei com
+                        Adsense 💲</li>
+                    <li>2022 <i class="fa-solid fa-check"></i> - Criei um site de futebol, falando sobre os campeonatos
+                        e partidas ao vivo 🔴</li>
+                    <li>2023 <i class="fa-solid fa-check"></i> - Participei de um projeto de uma casa de aposta chinesa,
+                        prestei serviço de SEO 📈</li>
+                    <li>2024 <i class="fa-solid fa-check"></i> - Criei um site que disponibilizava conteúdos para outros
+                        site incorporarem e fiz pequenos projetos avulsos, como landing pages <i
+                            class="fa-solid fa-code" style="color: var(--color-primary)"></i></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--RODAPÉ-->
+    <footer>
+        <div id="footer-items">
+            <p>&copy; Todos os direitos reservados - 2025</p>
+            <a href="https://github.com/filipesilvagalvao/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5537998743132" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
